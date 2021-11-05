@@ -5,7 +5,7 @@ const StudentCard = (student) => {
     <Card className="student mb-4">
       <Card.Img
         variant="top"
-        src={student.avatar}
+        src={student.pic}
         className="student-img"
         alt={student.firstName}
       ></Card.Img>
