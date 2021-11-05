@@ -1,10 +1,13 @@
-import { GET_STUDENTS } from "../actions";
+import { GET_STUDENTS, SET_STUDENTS } from "../actions";
 
-export default function studentsReducer(state = [], action) {
+const studentsReducer = (state = [], action) => {
   switch (action.type) {
     case GET_STUDENTS:
       return [...action.payload];
+    case SET_STUDENTS:
+      return [...state, ...action.students];
     default:
       return state;
   }
-}
+};
+export default studentsReducer;
