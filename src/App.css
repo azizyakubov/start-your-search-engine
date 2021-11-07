@@ -21,3 +21,6 @@
   max-width: 75%;
   margin: auto;
 }
+.filter-bar__placeholder {
+  padding-left: 5px;
+}

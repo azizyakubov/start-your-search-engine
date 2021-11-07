@@ -12,7 +12,7 @@ const StudentCard = (student) => {
       <Card.Body>
         <Card.Title className="student-name">{student.firstName}</Card.Title>
         <Card.Text className="student-info">Email: {student.email}</Card.Text>
-        <Card.Text>Classes: {student.classes.join(", ")}</Card.Text>
+        <Card.Text>Classes: {student.classes.join(", ") || "none"}</Card.Text>
       </Card.Body>
     </Card>
   );

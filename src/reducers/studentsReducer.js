@@ -1,4 +1,4 @@
-import { GET_STUDENTS, SET_STUDENTS } from "../actions";
+import { GET_CLASSES, GET_STUDENTS, SET_STUDENTS } from "../actions";
 
 const studentsReducer = (state = [], action) => {
   switch (action.type) {
@@ -6,6 +6,8 @@ const studentsReducer = (state = [], action) => {
       return [...action.payload];
     case SET_STUDENTS:
       return [...state, ...action.students];
+    // case GET_CLASSES:
+    //   return [...state, ...action.classesList];
     default:
       return state;
   }
