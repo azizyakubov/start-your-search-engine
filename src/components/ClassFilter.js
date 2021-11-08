@@ -10,16 +10,13 @@ const StyledSelect = styled(Select)`
 
 const customStyles = {
   control: (base, state) => ({
-    // ...base,
-    // fontSize: 18,
-    height: "60px",
+    height: "50px",
     width: "500px",
     backgroundColor: "white",
-    border: "1px solid",
-    borderRadius: "25px",
+    border: "2px solid",
+    borderRadius: "15px",
     cursor: "pointer",
     textAlign: "left",
-    // padding: "15px",
   }),
 
   option: (styles, { isFocused }) => {
@@ -35,7 +32,7 @@ const customStyles = {
   input: (styles) => ({
     ...styles,
     color: "black",
-    padding: "14px 5px",
+    padding: "8px 5px",
   }),
 
   menu: (styles) => ({
@@ -52,9 +49,10 @@ const customStyles = {
 
   indicatorsContainer: (styles) => ({
     // display: "none",
+    ...styles,
     position: "absolute",
     right: "0px",
-    top: "13px",
+    top: "8px",
   }),
   // valueContainer: (styles) => ({
   //   padding: "14px 7px",
@@ -68,11 +66,10 @@ const ClassesFilter = ({ handleFilter, options }) => {
         name="classes-filter"
         options={options}
         placeholder="Select from classes"
-        components={{
-          DropdownIndicator: () => null,
-          IndicatorSeparator: () => null,
+        onChange={(val) => {
+          handleFilter(val);
         }}
-        onChange={handleFilter}
+        components={animatedComponents}
         className="filter-bar"
         classNamePrefix="filter-bar"
         styles={customStyles}

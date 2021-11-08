@@ -6,8 +6,6 @@ const studentsReducer = (state = [], action) => {
       return [...action.payload];
     case SET_STUDENTS:
       return [...state, ...action.students];
-    // case GET_CLASSES:
-    //   return [...state, ...action.classesList];
     default:
       return state;
   }

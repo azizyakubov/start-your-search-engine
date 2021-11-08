@@ -9,6 +9,7 @@ const StudentsResults = ({ students, loading }) => {
         <h3>Loading...</h3>
       ) : (
         <Container>
+          {students.length < 1 && <h3>No results found</h3>}
           <Row xs={1} sm={2} md={3}>
             {students.map((student, index) => (
               <Col key={index}>
