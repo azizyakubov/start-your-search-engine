@@ -14,7 +14,7 @@ This project must include the following methods and concepts:
 
 3. CSS, or SCSS, or any javascript library that is used for styling
 
-Endpoint: https://6181949532c9e2001780488b.mockapi.io/students
+Endpoint: https://mocki.io/v1/c8c0b3f5-b3db-4c35-b230-c6a38b4a5635
 
 ## Getting Started
 
