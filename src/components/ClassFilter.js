@@ -39,7 +39,7 @@ const customStyles = {
     marginTop: 0,
     boxShadow: "none",
     borderRadius: 0,
-    backgroundColor: "#dbe9e3",
+    backgroundColor: "#cbe9dcdb",
   }),
 
   singleValue: (styles) => ({
