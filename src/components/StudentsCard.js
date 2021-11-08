@@ -10,8 +10,11 @@ const StudentCard = (student) => {
         alt={student.firstName}
       ></Card.Img>
       <Card.Body>
-        <Card.Title className="student-name">{student.firstName}</Card.Title>
+        <Card.Title className="student-name">
+          {student.firstName} {student.lastName}
+        </Card.Title>
         <Card.Text className="student-info">Email: {student.email}</Card.Text>
+        <Card.Text>Company: {student.company || "none"}</Card.Text>
         <Card.Text>Classes: {student.classes.join(", ") || "none"}</Card.Text>
       </Card.Body>
     </Card>

@@ -23,8 +23,7 @@ const customStyles = {
     return {
       ...styles,
       cursor: "pointer",
-      backgroundColor: isFocused ? "white" : "white",
-      color: isFocused ? "rgba(255, 80, 86)" : "black",
+      color: isFocused ? "white" : "black",
       lineHeight: 2,
     };
   },
@@ -40,6 +39,7 @@ const customStyles = {
     marginTop: 0,
     boxShadow: "none",
     borderRadius: 0,
+    backgroundColor: "#dbe9e3",
   }),
 
   singleValue: (styles) => ({
@@ -48,15 +48,8 @@ const customStyles = {
   }),
 
   indicatorsContainer: (styles) => ({
-    // display: "none",
     ...styles,
-    position: "absolute",
-    right: "0px",
-    top: "8px",
   }),
-  // valueContainer: (styles) => ({
-  //   padding: "14px 7px",
-  // }),
 };
 const ClassesFilter = ({ handleFilter, options }) => {
   return (

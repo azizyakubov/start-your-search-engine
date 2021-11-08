@@ -1,4 +1,4 @@
-import { GET_CLASSES, GET_STUDENTS, SET_STUDENTS } from "../actions";
+import { GET_STUDENTS, SET_STUDENTS } from "../actions";
 
 const studentsReducer = (state = [], action) => {
   switch (action.type) {
